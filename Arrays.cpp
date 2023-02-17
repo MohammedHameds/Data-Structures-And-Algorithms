@@ -180,57 +180,57 @@ int main()
     cout << "Array size is " << arr.getSize() << " ... While Array length is " << arr.getLength() << endl;
 
     /*Search function */
-    // int searchKey, searchIndex;
-    // cout << "Enter item to search for:\n";
-    // cin >> searchKey;
-    // searchIndex = arr.Search(searchKey);
-    // if (searchIndex == -1)
-    // {
-    //     cout << "Can\'t find element\n";
-    // }
-    // else
-    // {
-    //     cout << "Element found @ index " << searchIndex << endl;
-    // }
+    int searchKey, searchIndex;
+    cout << "Enter item to search for:\n";
+    cin >> searchKey;
+    searchIndex = arr.Search(searchKey);
+    if (searchIndex == -1)
+    {
+        cout << "Can\'t find element\n";
+    }
+    else
+    {
+        cout << "Element found @ index " << searchIndex << endl;
+    }
 
     /*Append function */
-    // int appendItem;
-    // cout << "Enter element to add to the Array : ";
-    // cin >> appendItem;
-    // arr.Append(appendItem);
+    int appendItem;
+    cout << "Enter element to add to the Array : ";
+    cin >> appendItem;
+    arr.Append(appendItem);
 
     /*Insert function */
-    // int isertIndex, isertItem;
-    // cout << "Enter index to insert item : ";
-    // cin >> isertIndex;
-    // cout << "Enter new item to insert : ";
-    // cin >> isertItem;
-    // arr.Insert(isertIndex, isertItem);
+    int isertIndex, isertItem;
+    cout << "Enter index to insert item : ";
+    cin >> isertIndex;
+    cout << "Enter new item to insert : ";
+    cin >> isertItem;
+    arr.Insert(isertIndex, isertItem);
 
-    // /*Delete function */
-    // int deleteIndex;
-    // cout << "Enter index to delete item : ";
-    // cin >> deleteIndex;
-    // arr.Delete(deleteIndex);
+    /*Delete function */
+    int deleteIndex;
+    cout << "Enter index to delete item : ";
+    cin >> deleteIndex;
+    arr.Delete(deleteIndex);
 
-    // /*Enlarg function */
-    // int newSize;
-    // cout << "Enter Array new size : ";
-    // cin >> newSize;
-    // arr.Enlarg(newSize);
-    // cout << "Array size is " << arr.getSize() << " ... While Array length is " << arr.getLength() << endl;
+    /*Enlarg function */
+    int newSize;
+    cout << "Enter Array new size : ";
+    cin >> newSize;
+    arr.Enlarg(newSize);
+    cout << "Array size is " << arr.getSize() << " ... While Array length is " << arr.getLength() << endl;
 
-    // int newArraySize;
-    // cout << "Enter the new Array size : ";
-    // cin >> newArraySize;
-    // Array newArr(newArraySize);
-    // newArr.Fill();
-    // newArr.Display();
-    // cout << "--------------------------" << endl;
+    int newArraySize;
+    cout << "Enter the new Array size : ";
+    cin >> newArraySize;
+    Array newArr(newArraySize);
+    newArr.Fill();
+    newArr.Display();
+    cout << "--------------------------" << endl;
 
-    // arr.Merge(newArr);
-    // arr.Display();
-    // cout << "Merged Array size is " << arr.getSize() << " ... While Array length is " << arr.getLength() << endl;
+    arr.Merge(newArr);
+    arr.Display();
+    cout << "Merged Array size is " << arr.getSize() << " ... While Array length is " << arr.getLength() << endl;
 
     return 0;
 }
